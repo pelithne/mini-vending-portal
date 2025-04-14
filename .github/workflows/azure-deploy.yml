@@ -46,6 +46,7 @@ jobs:
         run: |
           cd ./repo/src/frontend
           pwd
+          export NODE_OPTIONS=--openssl-legacy-provider
           npm install
           npm run build
 
